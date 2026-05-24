@@ -10,6 +10,7 @@ Legal documents, privacy policies, and support pages for all DoraCmeow games.
 | Spirit Beast Ascending (靈妖也修仙) | [View](meowxian/) | [View](meowxian/terms.html) | [View](meowxian/delete-account.html) | [View](meowxian/support.html) |
 | MeowLinguistics (貓語研究所) | [View](meowlinguistics/) | [View](meowlinguistics/terms.html) | [View](meowlinguistics/delete-account.html) | [View](meowlinguistics/support.html) |
 | DoraChess (哆啦黑白棋) | [View](dorachess/) | — | — | — |
+| Inkwhisker (墨鬚貓) | [View](inkwhisker/) | [View](inkwhisker/terms.html) | [View](inkwhisker/delete-account.html) | [View](inkwhisker/support.html) |
 
 ## GitHub Pages
 
