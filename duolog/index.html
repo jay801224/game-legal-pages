@@ -21,10 +21,10 @@
 <p class="updated">Last updated: June 4, 2026</p>
 
 <p>
-  Duolog (two-way meeting translation) is <strong>privacy-first</strong>. The developer does not collect, store, or transmit your personal data to our servers — we have none. Speech recognition runs locally on your computer, and your API keys stay on your machine.
+  Duolog (two-way meeting translation) is <strong>privacy-first</strong>. The developer runs no servers for your meeting content and does not collect your personal data. The sole exception is the anonymous technical error reporting described below, which excludes your content. Speech recognition runs locally on your computer, and your API keys stay on your machine.
 </p>
 <p class="bilingual">
-  Duolog（雙向會議翻譯）以「本機優先」設計。開發者不收集、不儲存、不傳送你的個人資料到我們的伺服器（我們沒有伺服器）。語音辨識在你的電腦本機執行，你的 API 金鑰只存在你電腦本機。
+  Duolog（雙向會議翻譯）以「本機優先」設計。開發者不為你的會議內容運營任何伺服器，也不收集你的個人資料；唯一的例外是下方說明的匿名技術錯誤回報（不含你的內容）。語音辨識在你的電腦本機執行，你的 API 金鑰只存在你電腦本機。
 </p>
 
 <h2>1. How Data Is Handled | 我們如何處理資料</h2>
@@ -47,12 +47,12 @@
   </tr>
   <tr>
     <td><strong>Transcripts / Notes</strong><br><span class="bilingual">逐字稿 / 筆記</span></td>
-    <td>Generated locally. If you opt into cloud notes, uploaded to <strong>your own</strong> Google Drive account (with your authorization, scope <code>drive.file</code> only). Stored solely in your own cloud — the developer has no access.<br><span class="bilingual">產生於本機；若你選擇雲端筆記，則上傳到你自己的 Google Drive 帳號（需你授權，僅 drive.file 範圍），僅存於你自己的雲端，與開發者無關。</span></td>
+    <td>Generated locally. If you opt into cloud notes, uploaded to <strong>your own</strong> Google Drive account (with your authorization, scope <code>drive.file</code> only), stored solely in your own cloud. When you enable cloud notes, the app obtains authorization to your Google account via Google OAuth; the credentials (<strong>including that account's email</strong>) are stored <strong>only locally</strong> (<code>%LOCALAPPDATA%\meeting_notes\secrets</code>) and are <strong>never uploaded to the developer</strong>.<br><span class="bilingual">產生於本機；若選雲端筆記，上傳到你自己的 Google Drive（僅 drive.file 範圍）。啟用時透過 Google OAuth 取得授權，憑證（含該帳號 Email）僅存本機，永不上傳給開發者。</span></td>
     <td>Optional cloud backup of your notes</td>
   </tr>
   <tr>
     <td><strong>Error Reporting (Sentry)</strong><br><span class="bilingual">錯誤回報</span></td>
-    <td>Uncaught exceptions are reported for stability. <strong>No PII, no audio, no translation content</strong> (<code>send_default_pii=False</code>) — only technical crash/exception data.<br><span class="bilingual">未捕捉的程式例外會回報以提升穩定度；不含個人識別資訊、不含音訊、不含翻譯內容，僅技術性崩潰資訊。</span></td>
+    <td>Uncaught exceptions are reported to the third-party monitoring service <strong>Sentry</strong> for stability. We disable local-variable capture (<code>include_local_variables=False</code>) and default PII (<code>send_default_pii=False</code>). Reports contain <strong>no PII, no audio, no translation content, and no API keys</strong> — only technical crash/exception stacks.<br><span class="bilingual">未捕捉例外回報到第三方監控服務 Sentry；已關閉區域變數快照與預設 PII，不含個資/音訊/翻譯內容/API 金鑰，僅技術性崩潰堆疊。</span></td>
     <td>Stability & crash diagnostics</td>
   </tr>
   <tr>
@@ -62,17 +62,18 @@
   </tr>
   <tr>
     <td><strong>Accounts</strong><br><span class="bilingual">帳號</span></td>
-    <td>The app requires no sign-up and collects <strong>no name / email / location</strong>.<br><span class="bilingual">app 本身不需註冊、不建立帳號，不收集姓名 / Email / 位置。</span></td>
+    <td>The app itself requires no sign-up and collects <strong>no name / email / location</strong>. (Cloud notes are optional and use your own Google account, as described above.)<br><span class="bilingual">app 本身不需註冊、不收集姓名 / Email / 位置。（雲端筆記為選填，使用你自己的 Google 帳號，見上。）</span></td>
     <td>—</td>
   </tr>
 </table>
 
 <h2>2. Third-Party Services | 第三方服務</h2>
-<p>The translation service you choose, Google Drive, and the Microsoft Store each have their own privacy policies:</p>
+<p>The translation service you choose, Google Drive, the Microsoft Store, and Sentry each have their own privacy policies:</p>
 <ul>
   <li><strong>Google Drive / Google Sign-In</strong> — <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
   <li><strong>Your chosen translation service</strong> (Google / Gemini / DeepL, per your API key) — see that provider's policy</li>
   <li><strong>Microsoft Store</strong> — <a href="https://privacy.microsoft.com/privacystatement">Microsoft Privacy Statement</a></li>
+  <li><strong>Sentry</strong> (Functional Software, Inc.; receives only the technical crash data described above) — <a href="https://sentry.io/privacy/">Sentry Privacy Policy</a></li>
 </ul>
 
 <h2>3. Children's Privacy | 兒童隱私</h2>
