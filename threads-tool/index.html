@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Threads Community Reply Assistant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #444;
+        }
+        table { border-collapse: collapse; width: 100%; margin: 16px 0; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; vertical-align: top; }
+        th { background: #f8f8f8; }
+    </style>
+</head>
+<body>
+    <h1>Privacy Policy — Threads Community Reply Assistant</h1>
+    <p>This tool is a <strong>single-user, local command-line application</strong> operated solely by the owner of the Threads account <strong>@fattyjaysu</strong>. It is not offered to the public; there is no sign-up, no user accounts, and no third-party users.</p>
+
+    <h2>What the Tool Does</h2>
+    <p>The tool discovers public Threads posts related to the owner's content niche (AI workflows, automation, product building) via the official Threads API keyword search, presents those posts to the account owner as reply candidates, and — only after the owner personally reviews and approves a reply — publishes that reply through the official Threads API, capped at a fixed daily limit.</p>
+
+    <h2>Data We Access and How It Is Used</h2>
+    <table>
+        <tr>
+            <th>Data</th>
+            <th>Source</th>
+            <th>Use</th>
+            <th>Storage</th>
+        </tr>
+        <tr>
+            <td>Public post text, post ID, permalink, author username</td>
+            <td>Threads API keyword search</td>
+            <td>Shown to the owner as reply candidates; risk-classified by topic safety rules</td>
+            <td>Local CSV working queue on the owner's machine only</td>
+        </tr>
+        <tr>
+            <td>The owner's own posts, replies, and insights</td>
+            <td>Threads API</td>
+            <td>Content scheduling and performance review for the owner's own account</td>
+            <td>Local files on the owner's machine only</td>
+        </tr>
+        <tr>
+            <td>Access tokens</td>
+            <td>Meta developer dashboard</td>
+            <td>API authentication</td>
+            <td>Local <code>.env</code> file on the owner's machine; never committed or transmitted elsewhere</td>
+        </tr>
+    </table>
+    <p>We do <strong>not</strong> collect or process: passwords, private messages, non-public posts, contact lists, or any data about minors. Topic safety rules hard-block processing of posts containing personal data, politics, religion, protected-class topics, medical/legal/financial advice, and security-sensitive content.</p>
+
+    <h2>Data Sharing and Selling</h2>
+    <p>No data is sold, shared, transferred, or disclosed to any third party. All data stays on the owner's local machine.</p>
+
+    <h2>Data Retention</h2>
+    <p>Candidate data is kept only as long as needed for the working reply queue and audit log, then archived or deleted locally.</p>
+
+    <h2 id="data-deletion">Data Deletion</h2>
+    <p>To request deletion of any data this tool holds (for example, if your public post appears in the local candidate queue), email <strong>jay801224@gmail.com</strong> with the post URL. The corresponding local records will be deleted within 7 days. The tool holds no server-side data, so deletion of local records is complete deletion.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>We may update this privacy policy from time to time. Material changes will be reflected on this page with an updated effective date.</p>
+
+    <h2>Contact</h2>
+    <p>Email: jay801224@gmail.com</p>
+
+    <p><strong>Effective date:</strong> 2026-06-11</p>
+</body>
+</html>

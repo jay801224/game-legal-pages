@@ -11,6 +11,7 @@ Legal documents, privacy policies, and support pages for all DoraCmeow games.
 | MeowLinguistics (貓語研究所) | [View](meowlinguistics/) | [View](meowlinguistics/terms.html) | [View](meowlinguistics/delete-account.html) | [View](meowlinguistics/support.html) |
 | DoraChess (哆啦黑白棋) | [View](dorachess/) | — | — | — |
 | Inkwhisker (墨鬚貓) | [View](inkwhisker/) | [View](inkwhisker/terms.html) | [View](inkwhisker/delete-account.html) | [View](inkwhisker/support.html) |
+| Threads Community Reply Assistant | [View](threads-tool/) | — | — | — |
 
 ## GitHub Pages
 
