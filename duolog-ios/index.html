@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Duolog for iOS — Privacy Policy</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang TC', 'Hiragino Sans', sans-serif; max-width: 820px; margin: 0 auto; padding: 20px; color: #333; line-height: 1.6; }
+    h1 { color: #08130d; }
+    h2 { color: #555; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+    table { border-collapse: collapse; width: 100%; margin: 16px 0; }
+    th, td { border: 1px solid #ddd; padding: 10px; text-align: left; vertical-align: top; }
+    th { background: #f8f8f8; }
+    .bilingual { color: #888; font-size: 0.92em; }
+    .updated { color: #999; font-size: 0.85em; }
+    code { background:#f2f2f2; padding:1px 4px; border-radius:3px; }
+  </style>
+</head>
+<body>
+
+<h1>Duolog — Privacy Policy</h1>
+<p class="updated">Last updated: July 22, 2026 · iOS edition</p>
+
+<p>
+  Duolog is a real-time, two-way meeting &amp; conversation translator. It is <strong>privacy-first</strong>: your audio is not recorded, and meeting content (transcripts/notes) is never stored on the developer's servers. This policy explains exactly what is processed and why.
+</p>
+<p class="bilingual">Duolog 是即時雙向會議／對話翻譯工具，以「隱私優先」設計：不錄製你的音訊，會議內容（逐字稿／筆記）不會存放在開發者的伺服器。本政策說明實際處理了什麼、為什麼。</p>
+<p class="bilingual">Duolog はリアルタイム双方向の会議・会話翻訳ツールです。「プライバシー優先」で設計されており、音声は録音されず、会議内容（文字起こし・メモ）が開発者のサーバーに保存されることはありません。本ポリシーでは何をどのように処理するかを説明します。</p>
+
+<h2>1. How Data Is Handled | 資料如何處理 | データの取り扱い</h2>
+<table>
+  <tr><th>Data | 資料 | データ</th><th>Details | 說明 | 詳細</th><th>Purpose | 目的</th></tr>
+  <tr>
+    <td><strong>Microphone / Audio</strong><br><span class="bilingual">麥克風／音訊<br>マイク／音声</span></td>
+    <td>Captured for real-time translation. Speech is recognized <strong>on your device first</strong> (Apple Speech Recognition). If a language's offline model is not installed, recognition may be handled by Apple's speech recognition service. <strong>Audio is not recorded and is never sent to the developer.</strong><br><span class="bilingual">為即時翻譯而擷取；語音<strong>優先在裝置上辨識</strong>（Apple 語音辨識）；若未安裝離線模型，可能交由 Apple 語音辨識服務處理。音訊不被錄製、永不傳給開發者。</span><br><span class="bilingual">リアルタイム翻訳のために取得。音声は<strong>まず端末上で認識</strong>（Apple 音声認識）。オフラインモデルが未インストールの場合、Apple の音声認識サービスが処理することがあります。音声は録音されず、開発者に送信されることはありません。</span></td>
+    <td>Real-time translation only<br><span class="bilingual">僅即時翻譯／リアルタイム翻訳のみ</span></td>
+  </tr>
+  <tr>
+    <td><strong>Recognized Text</strong><br><span class="bilingual">辨識後文字<br>認識後テキスト</span></td>
+    <td>The recognized text is encrypted and sent to the third-party AI translation services below to return a translation. <strong>Translated text is not stored by the developer.</strong><br><span class="bilingual">辨識後的文字加密後送往下列第三方 AI 翻譯服務以取得翻譯；翻譯文字不被開發者保存。</span><br><span class="bilingual">認識後のテキストは暗号化され、下記の第三者 AI 翻訳サービスに送信されて翻訳を返します。翻訳テキストは開発者に保存されません。</span></td>
+    <td>Return a translation<br><span class="bilingual">回傳翻譯／翻訳の取得</span></td>
+  </tr>
+  <tr>
+    <td><strong>Account &amp; User ID</strong><br><span class="bilingual">帳號與使用者 ID<br>アカウント・ユーザー ID</span></td>
+    <td>Sign-in with <strong>Apple</strong> or <strong>Google</strong> is required (via Firebase Authentication). A Firebase user ID is created to enforce your daily free / subscription usage on the server (metering). If you use Sign in with Apple you may hide your email. No name, phone, or location is collected.<br><span class="bilingual">需以 <strong>Apple</strong> 或 <strong>Google</strong> 登入（透過 Firebase Authentication）。建立 Firebase 使用者 ID 以在伺服器計量你的每日免費／訂閱用量。使用 Apple 登入可隱藏 Email；不收集姓名、電話或位置。</span><br><span class="bilingual"><strong>Apple</strong> または <strong>Google</strong> でのサインインが必要です（Firebase Authentication 経由）。無料枠／サブスク利用量をサーバーで計測するため Firebase ユーザー ID を作成します。Apple サインインではメールを非公開にできます。氏名・電話・位置情報は収集しません。</span></td>
+    <td>Sign-in &amp; usage metering<br><span class="bilingual">登入與計量／サインインと計測</span></td>
+  </tr>
+  <tr>
+    <td><strong>Transcripts / Notes</strong><br><span class="bilingual">逐字稿／筆記<br>文字起こし・メモ</span></td>
+    <td>Generated on your device. If you opt in, they are saved to <strong>your own</strong> Google Drive (scope <code>drive.file</code> only) or your own Notion, with your authorization — stored solely in your own cloud, <strong>never on the developer's servers</strong>.<br><span class="bilingual">產生於你的裝置；若選擇雲端儲存，經你授權存到<strong>你自己的</strong> Google Drive（僅 <code>drive.file</code> 範圍）或你自己的 Notion，只在你的雲端，絕不進開發者伺服器。</span><br><span class="bilingual">端末上で生成されます。任意で、あなたの許可のもと<strong>ご自身の</strong> Google Drive（<code>drive.file</code> のみ）または Notion に保存でき、ご自身のクラウドにのみ保存され、開発者のサーバーには保存されません。</span></td>
+    <td>Optional cloud save of your notes<br><span class="bilingual">選填雲端筆記／任意のクラウド保存</span></td>
+  </tr>
+  <tr>
+    <td><strong>Purchases / Subscriptions</strong><br><span class="bilingual">購買／訂閱<br>購入・サブスク</span></td>
+    <td>Processed by the <strong>Apple App Store</strong> (receipt validation via RevenueCat). Payment information is managed by Apple. <strong>The developer never sees your payment data.</strong> Subscription status is used only to unlock Unlimited access.<br><span class="bilingual">由 <strong>Apple App Store</strong> 處理（收據驗證經 RevenueCat）；付款資訊由 Apple 管理，開發者不接觸你的付款資料；訂閱狀態僅用於解鎖 Unlimited。</span><br><span class="bilingual"><strong>Apple App Store</strong> が処理します（レシート検証は RevenueCat 経由）。支払い情報は Apple が管理し、開発者が支払いデータを見ることはありません。サブスク状態は Unlimited の解放にのみ使用します。</span></td>
+    <td>Subscription billing<br><span class="bilingual">訂閱計費／サブスク課金</span></td>
+  </tr>
+  <tr>
+    <td><strong>Error Reporting (Sentry)</strong><br><span class="bilingual">錯誤回報<br>エラー報告</span></td>
+    <td>Uncaught technical errors are reported to <strong>Sentry</strong> for stability. Reports contain <strong>no audio, no translation content, and no payment data</strong> — only technical crash/exception stacks.<br><span class="bilingual">未捕捉的技術錯誤回報到 <strong>Sentry</strong> 以維穩；不含音訊／翻譯內容／付款資料，僅技術性崩潰堆疊。</span><br><span class="bilingual">未捕捉の技術的エラーは安定性のため <strong>Sentry</strong> に報告されます。音声・翻訳内容・支払いデータは含まず、技術的なクラッシュ情報のみです。</span></td>
+    <td>Stability &amp; crash diagnostics<br><span class="bilingual">穩定性診斷／安定性の診断</span></td>
+  </tr>
+</table>
+
+<h2>2. Third-Party Services | 第三方服務 | 第三者サービス</h2>
+<p>Recognized text is sent to the AI translation services below to perform translation. Each third party has its own privacy policy:</p>
+<p class="bilingual">辨識後文字會送往下列 AI 翻譯服務執行翻譯。各第三方有其自己的隱私政策：</p>
+<p class="bilingual">認識後テキストは下記の AI 翻訳サービスに送信されて翻訳されます。各社に独自のプライバシーポリシーがあります：</p>
+<ul>
+  <li><strong>Google Gemini / Google Cloud Translation</strong> — <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+  <li><strong>DeepL</strong> — <a href="https://www.deepl.com/privacy">DeepL Privacy Policy</a></li>
+  <li><strong>Firebase / Google Sign-In / Google Drive</strong> (Google LLC) — <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+  <li><strong>Notion</strong> (optional note storage) — <a href="https://www.notion.so/privacy">Notion Privacy Policy</a></li>
+  <li><strong>Apple App Store / RevenueCat</strong> (subscriptions) — <a href="https://www.apple.com/legal/privacy/">Apple Privacy</a> · <a href="https://www.revenuecat.com/privacy">RevenueCat Privacy</a></li>
+  <li><strong>Sentry</strong> (technical crash data only) — <a href="https://sentry.io/privacy/">Sentry Privacy Policy</a></li>
+</ul>
+
+<h2>3. Recording Others | 錄下他人 | 他者の録音について</h2>
+<p>When a conversation includes other people's voices, please obtain the consent of those present and use Duolog responsibly, in accordance with local laws.</p>
+<p class="bilingual">當對話包含他人語音時，請先取得在場者同意，並依當地法律以負責任的方式使用 Duolog。</p>
+<p class="bilingual">会話に他者の音声が含まれる場合は、事前に同席者の同意を得て、現地の法令に従い責任を持って Duolog をご利用ください。</p>
+
+<h2>4. Children's Privacy | 兒童隱私 | 児童のプライバシー</h2>
+<p>Duolog is not directed at children. We do not knowingly collect personal information from children.</p>
+<p class="bilingual">本 app 非針對兒童設計，我們不會蓄意收集兒童的個人資訊。</p>
+<p class="bilingual">本アプリは児童を対象としていません。児童の個人情報を故意に収集することはありません。</p>
+
+<h2>5. Data Deletion | 刪除資料 | データ削除</h2>
+<p>You can permanently delete your account and all cloud usage data in-app: <strong>Settings › Delete Account</strong>. Notes saved to your own Google Drive or Notion remain under your control in your own cloud.</p>
+<p class="bilingual">你可在 app 內永久刪除帳號與雲端用量資料：<strong>設定 › 刪除帳號</strong>。存到你自己 Google Drive 或 Notion 的筆記由你在自己的雲端控管。</p>
+<p class="bilingual">アプリ内でアカウントとクラウド上の利用データを完全に削除できます：<strong>設定 › アカウント削除</strong>。ご自身の Google Drive や Notion に保存したメモは、ご自身のクラウドで管理されます。</p>
+
+<h2>6. Changes &amp; Contact | 變更與聯絡 | 変更と連絡先</h2>
+<p>We may update this policy; changes are reflected by the date above. Questions:<br><strong>Email:</strong> jay801224@gmail.com</p>
+<p class="bilingual">本政策若有更新，會反映在上方日期。有問題請聯絡 <strong>jay801224@gmail.com</strong>。</p>
+<p class="bilingual">本ポリシーは更新されることがあり、変更は上記の日付に反映されます。お問い合わせ：<strong>jay801224@gmail.com</strong></p>
+
+</body>
+</html>
